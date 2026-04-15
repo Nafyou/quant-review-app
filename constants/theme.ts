@@ -39,7 +39,7 @@ export const Colors = {
   accent: {
     primary:   '#B85C38',  // burnt sienna — main CTA, active states
     primaryBg: '#FCF0EB',  // very light sienna wash
-    secondary: '#C99A2E',  // antique gold — badges, highlights
+    secondary: '#2d0ce7',  // antique gold — badges, highlights
     secondaryBg: '#FBF5E6',
     blue:      '#4A7FB5',  // muted warm blue — links, info
     blueBg:    '#EDF3F9',
