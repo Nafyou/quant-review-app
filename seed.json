@@ -1,0 +1,808 @@
+[
+  {
+    "uid": "ch01-p1",
+    "chapter": 1,
+    "section": "1",
+    "title": "solving skills correlate with knowledge breadth. A basic understanding of a broad range of topics often helps you better analyze problems, explore alternative approaches, and come up with efficient solutions. Besides, your responsibility may not be restricted to your own projects — you are expected to contribute as a member of a bigger team.",
+    "setup": "> **Key Insight:** The keyword is *\"basic understanding.\"* Interviewers do not expect you to be an expert on a specific subject — unless it happens to be your PhD thesis. The knowledge used in interviews, although broad, covers mainly essential concepts. **Know the basics very well.**\r\n\r\n---\r\n\r\n## Principle 2: Practice Your Interview Skills\r\n\r\nThe interview process starts long before you step into an interview room. In a sense, the success or failure of your interview is often determined before the first question is asked.\r\n\r\nYour solutions to interview problems may fail to reflect your true intelligence and knowledge if you are unprepared. Although a complete review of quant interview problems is impossible and unnecessary, practice does improve your interview skills.\r\n\r\nFurthermore, many of the behavioral, technical and resume-related questions can be anticipated.\r\n\r\n> **Action Item:** Prepare yourself for potential questions long before you enter an interview room.\r\n\r\n---\r\n\r\n## Principle 3: Listen Carefully\r\n\r\nYou should be an **active listener** in interviews so that you understand the problems well before you attempt to answer them.\r\n\r\n- If any aspect of a problem is not clear, politely ask for clarification.\r\n- If the problem is more than a couple of sentences, jot down key words to help you remember all the information.\r\n- For complex problems, interviewers often give away clues when they explain the problem.\r\n- Even the assumptions they give may include information as to how to approach the problem.\r\n\r\n> **Key Insight:** Listen carefully and make sure you get the necessary information before starting your solution.\r\n\r\n---\r\n\r\n## Principle 4: Speak Your Mind\r\n\r\nWhen you analyze a problem and explore different ways to solve it, **never do it silently**.\r\n\r\n- Clearly demonstrate your analysis and write down the important steps involved if necessary.\r\n- This conveys your intelligence to the interviewer and shows that you are methodical and thorough.\r\n- In case you go astray, the interaction will also give your interviewer the opportunity to correct course and provide hints.\r\n\r\nSpeaking your mind does **not** mean explaining every tiny detail. If some conclusions are obvious to you, simply state the conclusion without trivial details.\r\n\r\n> **Key Insight:** More often than not, the interviewer uses a problem to test a specific concept or approach. Focus on demonstrating your understanding of the key concept rather than dwelling on less relevant details.\r\n\r\n---\r\n\r\n## Principle 5: Make Reasonable Assumptions\r\n\r\nIn real job settings, you are unlikely to have all the necessary information or data before you build a model and make a decision. In interviews, interviewers may not give you all the necessary assumptions either.\r\n\r\nSo it is up to you to make reasonable assumptions. The keyword here is **reasonable**.\r\n\r\n- Explain your assumptions to the interviewer so that you will get immediate feedback.\r\n- To solve quantitative problems, it is crucial that you can quickly make reasonable assumptions and design appropriate frameworks based on those assumptions.\r\n\r\n---\r\n\r\n## Summary Table\r\n\r\n| # | Principle | Core Idea |\r\n|---|-----------|-----------|\r\n| 1 | Build a Broad Knowledge Base | Know essential concepts across math, finance, and programming |\r\n| 2 | Practice Your Interview Skills | Prepare before entering the room; anticipate common questions |\r\n| 3 | Listen Carefully | Be an active listener; clarify before solving |\r\n| 4 | Speak Your Mind | Vocalize your reasoning; show your thought process |\r\n| 5 | Make Reasonable Assumptions | State assumptions clearly; design frameworks around them |\r\n\r\n---\r\n\r\n## Key Takeaway\r\n\r\n> *\"If I am allowed to give only one suggestion to a candidate, it will be: know the basics very well.\"*  \r\n> — Xinfeng Zhou\r\n\r\n---\r\n\r\n## Review Questions\r\n\r\n1. Why do quant interviews test such a broad range of topics even though most quant roles require only specialized knowledge?\r\n2. What is the distinction between \"speaking your mind\" and over-explaining trivial details?\r\n3. Why is it important to vocalize your assumptions during a quantitative interview?\r\n4. At what stage does the interview process actually begin, according to the author?\r\n5. What are the two reasons the author gives for why quant interviews are so comprehensive?\r\n\r\n---\r\n\r\n*End of Chapter 1*",
+    "solution": "No solution found.",
+    "tags": [
+      "quant",
+      "chapter-1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p2",
+    "chapter": 2,
+    "section": "2",
+    "title": "Screwy Pirates",
+    "setup": "Five pirates looted a chest full of 100 gold coins. They agree on the following method to divide the loot:\r\n\r\n- The most senior pirate proposes a distribution.\r\n- All pirates (including the proposer) vote. If at least **50% accept**, gold is divided as proposed.\r\n- If not, the most senior pirate is fed to a shark and the process repeats with the next most senior pirate.\r\n- Assume all pirates are perfectly rational: they want to **stay alive first**, **get as much gold as possible second**, and **have fewer pirates on the boat** if otherwise equal.\r\n\r\n**How will the gold coins be divided in the end?**",
+    "solution": "Start with a simplified version — reduce the number of pirates:\r\n\r\n- **2 pirates:** Pirate 2 (senior) claims all 100 gold. He always gets 50% of votes from himself. Pirate 1 gets nothing.\r\n- **3 pirates:** Pirate 3 knows if his plan is voted down, pirate 1 gets nothing. So he offers pirate 1 one coin and keeps 99. Plan passes with 2 votes (pirates 1 and 3).\r\n- **4 pirates:** Pirate 4 knows that if his plan fails, pirate 2 gets nothing. So he offers pirate 2 one coin, keeps 99. Passes with 50% votes (pirates 2 and 4).\r\n- **5 pirates:** Pirate 5 knows that if his plan fails, pirates 1 and 3 get nothing. He offers them one coin each, keeps 98. Passes with 3 of 5 votes (pirates 1, 3, and 5).\r\n\r\n**Pattern:** For any (2n+1)-pirate case (n < 99), the most senior pirate offers pirates 1, 3, 5, ..., 2n-1 each one coin and keeps the rest.\r\n\r\n**Final Answer:** Pirate 5 keeps **98 coins**, pirates 1 and 3 get **1 coin each**, pirates 2 and 4 get **0 coins**.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p3",
+    "chapter": 2,
+    "section": "2",
+    "title": "Tiger and Sheep",
+    "setup": "100 tigers and 1 sheep are on a magic island with only grass. Tigers can eat grass, but prefer to eat sheep. Rules:\r\n- Only one tiger can eat the sheep at a time.\r\n- A tiger that eats the sheep **becomes a sheep** itself.\r\n- All tigers are smart and perfectly rational — they want to survive.\r\n\r\n**Will the sheep be eaten?**",
+    "solution": "Use problem simplification:\r\n\r\n- **n = 1 tiger:** The tiger eats the sheep (no threat of being eaten).\r\n- **n = 2 tigers:** Neither tiger eats the sheep. If one eats the sheep, it becomes a sheep and gets eaten by the other.\r\n- **n = 3 tigers:** The sheep gets eaten. Each tiger knows that after eating, there will be 2 tigers remaining and the new sheep (it) will not be eaten (from the n=2 case).\r\n- **n = 4 tigers:** No tiger eats the sheep. If one eats, it becomes a sheep in a 3-tiger world and will be eaten.\r\n\r\n**Pattern:** If the number of tigers is **odd**, the sheep is eaten. If **even**, the sheep is safe.\r\n\r\n**Final Answer:** With **100 tigers (even)**, the sheep will **NOT** be eaten.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p4",
+    "chapter": 2,
+    "section": "2",
+    "title": "River Crossing",
+    "setup": "Four people (A, B, C, D) need to cross a river. The bridge holds at most 2 people. They have only one torch. Each pair walks at the speed of the slower person.\r\n\r\n- A takes **10 minutes**\r\n- B takes **5 minutes**\r\n- C takes **2 minutes**\r\n- D takes **1 minute**\r\n\r\n**What is the minimum time to get all across?**",
+    "solution": "Key insight: The 10-minute and 5-minute people should cross together, and this should NOT happen in the first crossing (otherwise one has to come back).\r\n\r\n1. C and D cross → **2 min** (total: 2)\r\n2. D returns with torch → **1 min** (total: 3)\r\n3. A and B cross → **10 min** (total: 13)\r\n4. C returns with torch → **2 min** (total: 15)\r\n5. C and D cross → **2 min** (total: 17)\r\n\r\n**Minimum time: 17 minutes.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p5",
+    "chapter": 2,
+    "section": "2",
+    "title": "Birthday Problem",
+    "setup": "Your boss A's birthday is one of 10 dates:\r\n\r\n- Mar 4, Mar 5, Mar 8\r\n- Jun 4, Jun 7\r\n- Sep 1, Sep 5\r\n- Dec 1, Dec 2, Dec 8\r\n\r\n- You know only the **month**.\r\n- Your colleague C knows only the **day**.\r\n\r\nYou said: *\"I don't know A's birthday; C doesn't know it either.\"*  \r\nC replied: *\"I didn't know A's birthday, but now I know it.\"*  \r\nYou said: *\"Now I know it, too.\"*\r\n\r\n**What is A's birthday?**",
+    "solution": "Let D = the day. Possible days: {1, 2, 4, 5, 7, 8}.\r\n\r\n- Days **2** (Dec 2) and **7** (Jun 7) appear only once → C would know immediately if told those days.\r\n- Since **you** are certain C doesn't know, the month cannot be **June or December** (those months contain the unique days 7 and 2).\r\n- Remaining months: **March** or **September**.\r\n- C now knows → the day must be unique within {March, September} dates.\r\n- Mar 5 and Sep 5 are both in different months but day 5 appears twice → eliminated.\r\n- Remaining: **Mar 4, Mar 8, Sep 1**.\r\n- You now know → you must have been told a month with only one remaining date.\r\n- March still has two options (Mar 4, Mar 8); September has only one (Sep 1).\r\n\r\n**Answer: September 1.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p6",
+    "chapter": 2,
+    "section": "2",
+    "title": "Card Game",
+    "setup": "A casino uses a normal 52-card deck. You turn over two cards at a time:\r\n- Both black → go to dealer's pile\r\n- Both red → go to your pile\r\n- One black, one red → discarded\r\n\r\nIf you end up with more cards in your pile, you win $100. How much would you pay to play?",
+    "solution": "No matter how the cards are arranged, you and the dealer will **always have the same number of cards**. Each discarded pair has one black and one red card, so equal numbers of red and black cards are discarded. The number of red cards left for you and black cards left for the dealer are always the same.\r\n\r\n**You should pay $0. The dealer always wins (or ties).**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p7",
+    "chapter": 2,
+    "section": "2",
+    "title": "Burning Ropes",
+    "setup": "You have two ropes, each taking **1 hour to burn**. The density is uneven, so you can't use length to measure time. How do you measure **45 minutes**?",
+    "solution": "Key insight: If you light both ends of a rope simultaneously, it burns in x/2 minutes.\r\n\r\n1. **Light both ends of rope 1** AND **one end of rope 2** simultaneously.\r\n2. After **30 minutes**, rope 1 is fully burned. At this moment, **light the other end of rope 2**.\r\n3. Rope 2 now has 30 minutes left but is burning from both ends → it will finish in **15 more minutes**.\r\n\r\n**Total: 30 + 15 = 45 minutes.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p8",
+    "chapter": 2,
+    "section": "2",
+    "title": "Defective Ball",
+    "setup": "You have **12 identical balls**. One is heavier **OR** lighter than the rest (unknown which). Using a balance scale that only shows which side is heavier, **determine the defective ball in 3 measurements**.",
+    "solution": "The key is to **divide into 3 groups** instead of 2. Each comparison gives information about the third group.\r\n\r\n**Step 1:** Weigh balls 1–4 vs. balls 5–8.\r\n\r\n- **Case A: They balance** → defective ball is in {9, 10, 11, 12}.\r\n  - Weigh 9, 10 vs. 8, 11 (8 is known normal).\r\n  - Sub-cases resolve in one more measurement.\r\n\r\n- **Case B: 1–4 lighter than 5–8** → defective is either L in {1,2,3,4} or H in {5,6,7,8}.\r\n  - Further comparisons with known normals identify the exact ball.\r\n\r\n**General rules:**\r\n- With knowledge of whether defective is heavier or lighter: identify among **3^n** balls in n measurements.\r\n- Without that knowledge: identify among **(3^n − 3) / 2** balls in n measurements.\r\n\r\n*(See Figure 2.1 in the book for the full decision tree.)*",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p9",
+    "chapter": 2,
+    "section": "2",
+    "title": "Trailing Zeros",
+    "setup": "How many trailing zeros are in **100!** (factorial of 100)?",
+    "solution": "Trailing zeros come from factors of 10 = 2 × 5. Since factors of 2 far outnumber factors of 5, count factors of 5 in 100!:\r\n\r\n- Numbers divisible by 5 in [1, 100]: 20 numbers (5, 10, ..., 100)\r\n- Numbers divisible by 5² = 25: 4 numbers (25, 50, 75, 100)\r\n\r\nTotal factors of 5 = 20 + 4 = **24**\r\n\r\n**Answer: 24 trailing zeros.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p10",
+    "chapter": 2,
+    "section": "2",
+    "title": "Horse Race",
+    "setup": "25 horses, each running at a unique constant speed. The track has 5 lanes — only 5 horses can race at a time. **Find the 3 fastest horses with the minimum number of races.**",
+    "solution": "**Round 1 (5 races):** Divide 25 horses into 5 groups of 5. Race each group → determine the winner of each group.\r\n\r\n**Round 2 (1 race):** Race the 5 group winners. Without loss of generality, assume the order is: horse 1 > horse 6 > horse 11 > horse 16 > horse 21.\r\n- Horses 16–25 are eliminated (their group winners finished 4th and 5th).\r\n- Horse 1 is the fastest overall.\r\n- Candidates for 2nd and 3rd place: horses **2, 3** (same group as 1), **6, 7** (same group as 6), and **11** (same group as 11).\r\n\r\n**Round 3 (1 race):** Race horses 2, 3, 6, 7, and 11. Top 2 from this race, plus horse 1, are the 3 fastest.\r\n\r\n**Minimum races needed: 7.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p11",
+    "chapter": 2,
+    "section": "2",
+    "title": "Infinite Sequence",
+    "setup": "If x^x^x^x^... = 2, what is x? (where ^ denotes exponentiation)",
+    "solution": "Since the sequence is infinite, adding or removing one x^ does not change the result:\r\n\r\nx^(x^x^x^...) = x^2 = 2  \r\n→ x = √2\r\n\r\n**Answer: x = √2.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p12",
+    "chapter": 2,
+    "section": "2",
+    "title": "Box Packing",
+    "setup": "Can you pack **53 bricks of dimension 1×1×4** into a **6×6×6 box**?",
+    "solution": "Total volume: 53 × 4 = 212, which is less than 6³ = 216. However, packing is **impossible**.\r\n\r\n**Proof via coloring:**  \r\nImagine the 6×6×6 box divided into 27 small 2×2×2 cubes, alternating black and white (like a 3D chess board). There are either 14 black + 13 white, or 13 black + 14 white.\r\n\r\nAny 1×1×4 brick always covers exactly **one 2×2×2 black cube and one 2×2×2 white cube**. Each 2×2×2 cube can hold **at most 4** such bricks. With only 13 cubes of one color, at most 13×4 = 52 bricks can be placed. **The 53rd brick cannot be packed.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p13",
+    "chapter": 2,
+    "section": "2",
+    "title": "Calendar Cubes",
+    "setup": "Design two custom dice (6 faces each) using single digits so that every morning they show the current day of the month (01–31). Both dice must be used.",
+    "solution": "Since 11 and 22 must be displayable, **both dice must have 1 and 2**. For single-digit days 01–09, both dice need **0**.\r\n\r\nAssignment so far:\r\n- Dice 1: 0, 1, 2, ?, ?, ?\r\n- Dice 2: 0, 1, 2, ?, ?, ?\r\n\r\nRemaining digits: 3, 4, 5, 6, 7, 8, 9 → 7 digits, but only 6 remaining face slots.\r\n\r\n**Key insight:** **6 can be used as 9** (by flipping upside down) since they never appear on the same date.\r\n\r\n**Final answer:**\r\n- Dice 1: 0, 1, 2, 3, 4, 5\r\n- Dice 2: 0, 1, 2, 6/9, 7, 8",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p14",
+    "chapter": 2,
+    "section": "2",
+    "title": "Door to Offer",
+    "setup": "Two doors: one leads to a job offer, one leads to the exit. Each door has a guard — one always lies, one always tells the truth. You can ask **one guard one yes/no question**.\r\n\r\n**What do you ask?**",
+    "solution": "Ask one guard: **\"Would the other guard say that you are guarding the door to the offer?\"**\r\n\r\n- **If the answer is NO** → choose THIS door (it leads to the offer).\r\n- **If the answer is YES** → choose the OTHER door.\r\n\r\n**Why it works:** In both scenarios (truth-teller at offer door vs. liar at offer door), this double-negation question produces a consistent, reliable answer — eliminating the uncertainty of asking either guard directly.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p15",
+    "chapter": 2,
+    "section": "2",
+    "title": "Message Delivery",
+    "setup": "You need to send a document to a colleague. The messenger service is insecure — anything in an unlocked box is lost (including locks placed inside). Each person's padlock has only one key (their own).\r\n\r\n**How do you securely deliver the document?**",
+    "solution": "1. **You** place your lock on the box and send it to your colleague.\r\n2. **Your colleague** cannot open it, but adds **their own lock** and sends it back.\r\n3. **You** remove your lock (you have your key) and send the box back.\r\n4. **Your colleague** removes their lock and retrieves the document.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p16",
+    "chapter": 2,
+    "section": "2",
+    "title": "Last Ball",
+    "setup": "A bag has **20 blue balls** and **14 red balls**. Each time, randomly take 2 balls out. Replace with:\r\n- Both same color → add one **blue** ball\r\n- Different colors → add one **red** ball\r\n\r\n**What color is the last ball? What if we start with 20 blue and 13 red?**",
+    "solution": "Analyze changes in red ball count (R):\r\n- Both blue: R stays same\r\n- Both red: R decreases by 2\r\n- One of each: R stays same\r\n\r\n**R never becomes odd if it starts even (14).** Since the total balls decrease to 1, the last ball cannot be red (that would require R → 1, which is odd). **Last ball is BLUE.**\r\n\r\nWith 13 red balls (odd), R can only stay odd or decrease by 2 (remain odd). The last ball must be **RED**.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p17",
+    "chapter": 2,
+    "section": "2",
+    "title": "Light Switches",
+    "setup": "One light bulb inside a room. **Four switches** outside. Only one controls the light bulb. How many times must you enter the room to identify the correct switch?",
+    "solution": "**Once.**\r\n\r\nUse two binary properties of a light bulb: **on/off** and **hot/cold**.\r\n\r\n**Strategy:**\r\n1. Turn on switches **1 and 2**; wait a while.\r\n2. Turn **off switch 2**, turn **on switch 3**.\r\n3. Enter the room **once** and check:\r\n   - Light **on + hot** → switch 1\r\n   - Light **off + hot** → switch 2 (was on, now off)\r\n   - Light **on + cold** → switch 3\r\n   - Light **off + cold** → switch 4 (never turned on)",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p18",
+    "chapter": 2,
+    "section": "2",
+    "title": "Quant Salary",
+    "setup": "8 quants want to compute their average salary without anyone disclosing their individual salary.",
+    "solution": "1. Quant 1 picks a **random number R**, adds their salary, and passes the sum to quant 2.\r\n2. Each subsequent quant adds their salary and passes the running total.\r\n3. The total returns to quant 1, who subtracts R.\r\n4. Divide by 8 → **average salary**.\r\n\r\nNo one individual salary is ever revealed.\r\n\r\n*(This technique is actually used in practice by data providers to anonymize fund position data.)*",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p19",
+    "chapter": 2,
+    "section": "2",
+    "title": "Coin Piles",
+    "setup": "Blindfolded in a room. 1000 coins on the floor: **980 tails up**, **20 heads up**. You cannot feel which side is up. Separate the coins into two piles so **both piles have equal number of heads**.",
+    "solution": "Take any **20 coins** and flip all of them.\r\n\r\n**Proof:** Say m of those 20 coins started heads up. After flipping all 20:\r\n- First pile has (20 - m) heads.\r\n- Second pile (980 coins) has (20 - m) heads.\r\n\r\n**Both piles always have equal heads**, regardless of m!",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p20",
+    "chapter": 2,
+    "section": "2",
+    "title": "Mislabeled Bags",
+    "setup": "Three bags — one with only apples, one with only oranges, one with a mix. **All three bags are mislabeled.**\r\n\r\n**Develop a strategy to identify all bags with the minimum number of fruit picks.**",
+    "solution": "**Pick one fruit from the bag labeled \"mix.\"**\r\n\r\nSince all bags are mislabeled, the bag labeled \"mix\" must be either **all apples** or **all oranges**.\r\n\r\n- If you draw an **orange** → that bag is all oranges.\r\n  - The bag labeled \"apple\" cannot be all apples → it must be the **mix**.\r\n  - The bag labeled \"orange\" must be the **apple** bag.\r\n- If you draw an **apple** → that bag is all apples.\r\n  - Similar logic applies.\r\n\r\n**Only 1 fruit pick needed.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p21",
+    "chapter": 2,
+    "section": "2",
+    "title": "Wise Men (Sultan's Glass)",
+    "setup": "50 wise men imprisoned. A sultan has a glass (currently bottom-down). Each minute, one wise man is called and may turn it over or do nothing. Calls are random and may repeat infinitely. If any wise man correctly declares \"all have been called at least once,\" they go free. If wrong, they die.\r\n\r\n**Design a strategy.**",
+    "solution": "Designate one wise man as the **spokesman**. Assign roles:\r\n\r\n- **Other 49 wise men:** Each flips the glass upside down the **first time** they find it bottom-down, and does nothing after that (or if it's already upside down).\r\n- **Spokesman:** Each time the glass is upside down, he flips it back to bottom-down. He **counts** each such flip.\r\n\r\nAfter the spokesman performs his **49th flip**, all 49 others have been called at least once. He then declares freedom.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p22",
+    "chapter": 2,
+    "section": "2",
+    "title": "Clock Pieces",
+    "setup": "A clock (numbered 1–12) breaks into three pieces. The sums of numbers on each piece are equal. What numbers are on each piece?",
+    "solution": "Total sum = 12×13/2 = 78. Each piece sums to **26**.\r\n\r\nKey insight: 12 and 1 are adjacent on a clock, so they can be on the same piece.\r\n\r\n- Piece 1: **12, 1, 2, 11** (sum = 26) — wait: 12+1+2+11 = 26 ✓\r\n- Piece 2: **3, 4, 9, 10** (sum = 26) ✓\r\n- Piece 3: **5, 6, 7, 8** (sum = 26) ✓\r\n\r\n**Answer:** {12, 1, 2, 11}, {3, 4, 9, 10}, {5, 6, 7, 8}",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p23",
+    "chapter": 2,
+    "section": "2",
+    "title": "Missing Integers",
+    "setup": "You have 98 distinct integers from the set {1, 2, ..., 100}. Find the two missing integers.",
+    "solution": "Let x and y be the missing integers. Let z₁, ..., z₉₈ be the existing ones.\r\n\r\nUsing two summation equations:\r\n\r\n1. **Sum equation:** x + y = 100×101/2 − Σzᵢ\r\n2. **Sum of squares equation:** x² + y² = 100×101×201/6 − Σzᵢ²\r\n\r\nSolve the two equations to find x and y uniquely.\r\n\r\n**Algorithm complexity: O(n)** for two missing integers in {1, ..., n}.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p24",
+    "chapter": 2,
+    "section": "2",
+    "title": "Counterfeit Coins I",
+    "setup": "10 bags of 100 coins each. 9 bags have 10-gram coins; 1 bag has coins weighing 9 or 11 grams. **Find the counterfeit bag in one weighing** using a digital scale.",
+    "solution": "Take **1 coin from bag 1, 2 from bag 2, ..., 10 from bag 10** (55 coins total).\r\n\r\nIf all coins were genuine: 55 × 10 = **550 grams**.\r\n\r\nIf bag j is counterfeit: the actual weight = 550 ± j.\r\n\r\nSince j is distinct for each bag, the weight deviation identifies the counterfeit bag **and** whether the coins are heavier or lighter.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p25",
+    "chapter": 2,
+    "section": "2",
+    "title": "Glass Balls",
+    "setup": "Two glass balls in a 100-story building. A ball breaks at floor X or higher, but survives below X. **Minimize the number of drops in the worst case.**",
+    "solution": "Let N = max number of drops. The optimal strategy is to drop ball 1 from progressively lower floors:\r\n\r\n- Drop 1: floor N\r\n- Drop 2: floor N + (N-1)\r\n- Drop 3: floor N + (N-1) + (N-2)\r\n- etc.\r\n\r\nThis covers N + (N-1) + ... + 1 = **N(N+1)/2** floors.\r\n\r\nFor 100 floors: N(N+1)/2 ≥ 100 → **N = 14**\r\n\r\n**Optimal strategy:** Start at floor 14, then 27, then 39, etc.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p26",
+    "chapter": 2,
+    "section": "2",
+    "title": "Matching Socks",
+    "setup": "A drawer has 2 red, 20 yellow, and 31 blue socks. What is the **minimum number of socks** you must grab to guarantee a matching pair?",
+    "solution": "3 colors = 3 pigeon holes. By the Pigeon Hole Principle, grabbing **4 socks (4 pigeons)** guarantees at least 2 are the same color.\r\n\r\n**Answer: 4 socks.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p27",
+    "chapter": 2,
+    "section": "2",
+    "title": "Handshakes",
+    "setup": "At a party of 26 people, each shook hands with at least 1 other. Prove that **at least two people shook hands with exactly the same number of people**.",
+    "solution": "26 people, each shook hands with between 1 and 25 people → 25 possible values.\r\n\r\n26 pigeons (people), 25 holes (possible handshake counts) → by the Pigeon Hole Principle, **at least two people have the same handshake count**.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p28",
+    "chapter": 2,
+    "section": "2",
+    "title": "Have We Met Before?",
+    "setup": "**Statement:** Show that among any 6 people at a party, either at least 3 people met each other before, or at least 3 people were strangers before.",
+    "solution": "Fix person 6. Among the remaining 5, either **≥ 3 met person 6** or **≥ 3 did not meet person 6**.\r\n\r\n**Case 1: 3+ have met you.**  \r\n- If any two of them met each other → you + those two = 3 mutual acquaintances.\r\n- If none of them met each other → those 3+ are mutual strangers.\r\n\r\n**Case 2: 3+ have NOT met you.**  \r\n- If any two of them have NOT met each other → you + those two = 3 mutual strangers.\r\n- If all pairs among them HAVE met each other → those 3+ are mutual acquaintances.\r\n\r\nIn all cases, the conclusion holds. ∎",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p29",
+    "chapter": 2,
+    "section": "2",
+    "title": "Ants on a Square",
+    "setup": "51 ants on a unit square. Can you place a circle of radius 1/7 to encompass at least 3 ants?",
+    "solution": "Divide the square into a **5×5 grid** of 25 smaller squares (each with side 1/5).\r\n\r\nBy the Generalized Pigeon Hole Principle: 51 ants in 25 squares → at least one square has **⌈51/25⌉ = 3** ants.\r\n\r\nA circle of radius 1/7 can cover any 1/5 × 1/5 square (since √2 × (1/5) ≈ 0.283 < 2/7 ≈ 0.286). **Yes, you can always find such a position.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p30",
+    "chapter": 2,
+    "section": "2",
+    "title": "Counterfeit Coins II",
+    "setup": "5 bags of 100 coins each. Each coin weighs 9, 10, or 11 grams. All coins in a bag weigh the same. How many times do you use a digital scale to determine the type of each bag?",
+    "solution": "Use **1, 3, 9, 27, 81 coins** from bags 1, 2, 3, 4, 5 respectively (powers of 3).\r\n\r\nEach bag has 3 possible types. The unique weighted sum identifies all 5 bags simultaneously — **one weighing.**\r\n\r\n*This uses the Pigeon Hole Principle to ensure all 3⁵ = 243 combinations produce distinguishable sums.*",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p31",
+    "chapter": 2,
+    "section": "2",
+    "title": "Prisoner Problem (2 colors)",
+    "setup": "100 prisoners each receive a red or blue hat. Each can see all others' hats but not their own. They are called out randomly and must guess their own hat color aloud (others can hear). If a prisoner guesses correctly, they're freed; otherwise executed.\r\n\r\n**Design a strategy to save as many as possible.**",
+    "solution": "At least **99 prisoners can be guaranteed to be saved**.\r\n\r\n- Prisoner 1 (first called) counts the red hats he sees. If **odd**, he declares **red**; if **even**, he declares **blue**. He has a 1/2 chance of survival.\r\n- Each subsequent prisoner, using the declared color plus what they observe, can deduce their own hat color with certainty.\r\n\r\n**Extension to 3 colors (red, green, blue):**  \r\nAssign scores: red=0, green=1, blue=2.\r\n\r\nPrisoner 1 announces the color corresponding to (sum of all visible scores) % 3. All others can then deduce their own score. **At least 99 are still guaranteed to be saved.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p32",
+    "chapter": 2,
+    "section": "2",
+    "title": "Division by 9",
+    "setup": "**Rule:** An integer is divisible by 9 if and only if the **sum of its digits is divisible by 9**.\r\n\r\n**Proof:**  \r\nWrite integer a = aₙ·10ⁿ + aₙ₋₁·10ⁿ⁻¹ + ... + a₁·10 + a₀.\r\n\r\nDefine b = a − (aₙ + aₙ₋₁ + ... + a₀).\r\n\r\nThen b = aₙ(10ⁿ−1) + aₙ₋₁(10ⁿ⁻¹−1) + ... + a₁(10−1).\r\n\r\nSince each (10ᵏ − 1) is divisible by 9 (e.g., 9, 99, 999, ...), b is divisible by 9. Therefore a is divisible by 9 iff the digit sum is divisible by 9. ∎\r\n\r\n*(Similarly: a number is divisible by 11 iff the alternating digit sum (with signs ±) is divisible by 11.)*\r\n\r\n---",
+    "solution": "No solution found.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p33",
+    "chapter": 2,
+    "section": "2",
+    "title": "Chameleon Colors",
+    "setup": "A remote island has **13 red, 15 green, 17 blue** chameleons. When two chameleons of different colors meet, **both change to the third color**.\r\n\r\n**Can all chameleons ever become the same color?**",
+    "solution": "**No.**\r\n\r\n**Approach 1 (Simplification):**  \r\nReduce: subtract minimum (13) from each → (0, 2, 4). Try to reach (0, 0, 6). As shown in the combination transition graph, combination (0, 2, 4) cannot reach (0, 0, 6).\r\n\r\n**Approach 2 (Modular invariant):**  \r\nThe initial counts mod 3: 13 ≡ 1, 15 ≡ 0, 17 ≡ 2 (mod 3).\r\n\r\nAfter any meeting of two different-colored chameleons, the three possible transformations are:\r\n- (3x+2, 3y, 3z+1) → (3x, 3y+1, 3z+2)\r\n- (3x, 3y+1, 3z+2) → (3x+2, 3y+2, 3z)  ← wait\r\n\r\nIn every case, the residues mod 3 remain one of {0, 1, 2} for the three groups. Since we need two groups to have equal counts (as an intermediate step toward all-same), and the mod-3 residues of any two groups remain permanently distinct, two groups can **never** have the same count.\r\n\r\n**The chameleons can never all become one color.** ∎",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p34",
+    "chapter": 2,
+    "section": "2",
+    "title": "Coin Split Problem",
+    "setup": "Split 1000 coins into two piles. Multiply the two pile sizes. Split again, repeat, accumulate products. Continue until all piles have exactly 1 coin. Prove the final sum is **always the same** regardless of how splits are made.\r\n\r\n**Claim:** f(n) = n(n−1)/2",
+    "solution": "Base cases: f(2) = 1, f(3) = 3, f(4) = 6. ✓\r\n\r\nInductive step: Assume f(k) = k(k−1)/2 for all k < N.\r\n\r\nFor N coins split into x and N−x:\r\nf(N) = x(N−x) + f(x) + f(N−x) = x(N−x) + x(x−1)/2 + (N−x)(N−x−1)/2 = N(N−1)/2\r\n\r\n**For n = 1000:** f(1000) = 1000 × 999 / 2 = **499,500**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p35",
+    "chapter": 2,
+    "section": "2",
+    "title": "Chocolate Bar Problem",
+    "setup": "A 6×8 chocolate bar (48 squares). Each break splits one rectangle into two. **How many breaks to get all 48 individual squares?**",
+    "solution": "**General answer: mn − 1 breaks for an m×n bar.**\r\n\r\n**Intuitive proof:** Each break increases the number of pieces by exactly 1. Start with 1 piece; end with mn pieces. Therefore: **mn − 1 breaks**.\r\n\r\n**For 6×8:** 6 × 8 − 1 = **47 breaks.**",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p36",
+    "chapter": 2,
+    "section": "2",
+    "title": "Race Track",
+    "setup": "One-way circular track. N gas cans placed randomly. The total gas is exactly enough to complete one circle. Your car starts with no gas. **Prove you can always find a starting position that lets you complete the full circle.**",
+    "solution": "- **Base n=1:** Start at the single gas can. ✓\r\n- **Base n=2:** One can must have enough gas to reach the other. Start there. ✓\r\n- **Inductive step:** Given the statement holds for N=n, prove for N=n+1:  \r\n  Among n+1 cans, there always exists some i where gas xᵢ ≥ segment yᵢ. Merge can i+1 into can i (combine gas at position i). This reduces the N=n+1 problem to N=n, for which a valid start exists. ∎\r\n\r\n**Alternative approach:** Drive the full circle with a \"fully-fueled phantom car\" from any starting point. Record tank level at each gas can (before refueling). The position with the **lowest recorded level** before refueling is the valid starting position for an empty-tank car.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p37",
+    "chapter": 2,
+    "section": "2",
+    "title": "Irrational Number",
+    "setup": "**Prove that √2 is irrational.**\r\n\r\n**Proof:**  \r\nAssume √2 is rational. Then √2 = m/n for integers m, n with **no common factors** (irreducible fraction).\r\n\r\nThen m² = 2n² → m² is even → m is even. Write m = 2x.\r\n\r\nThen 4x² = 2n² → n² = 2x² → n is even.\r\n\r\nBut if both m and n are even, they share the common factor 2 — **contradicting our assumption**. Therefore, √2 is irrational. ∎\r\n\r\n---",
+    "solution": "No solution found.",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch02-p38",
+    "chapter": 2,
+    "section": "2",
+    "title": "Rainbow Hats",
+    "setup": "7 prisoners, each receives a hat of one of 7 rainbow colors (at the executioner's discretion). Each prisoner can see all others' hats but not their own. They cannot communicate. Each writes down their guess. **If at least one guess is correct, all go free.** Design a guaranteed strategy.",
+    "solution": "Assign color codes 0–6 to the 7 colors. Label prisoners 0–6.\r\n\r\n**Strategy:** Prisoner i guesses the color gᵢ such that:\r\n\r\ngᵢ + (sum of all other 6 prisoners' hat codes) ≡ i (mod 7)\r\n\r\nThis means each prisoner is \"responsible\" for a unique remainder class.\r\n\r\n**Why it works:**  \r\nThe true sum Σxₖ must have some remainder r ∈ {0, 1, 2, 3, 4, 5, 6}. The prisoner responsible for remainder r will guess their hat color correctly.\r\n\r\n**Proof by contradiction:** If gᵢ ≠ xᵢ for all i, then Σxₖ % 7 ≠ 0, 1, 2, 3, 4, 5, or 6 — which is impossible. Therefore at least one prisoner guesses correctly. **All 7 go free.** ∎",
+    "tags": [
+      "quant",
+      "chapter-2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p39",
+    "chapter": 3,
+    "section": "3",
+    "title": "Derivative of `y = (ln x)^(ln x)`",
+    "setup": "What is the derivative of `y = (ln x)^(ln x)`?\r\n\r\n> **Hint:** For functions of the form `y = f(x)^(g(x))`, take the natural log of both sides and differentiate, using `d(ln y)/dx = (1/y)·(dy/dx)`.",
+    "solution": "Take `ln` of both sides:\r\n```\r\nln y = ln[(ln x)^(ln x)] = ln(x) · ln(ln x)\r\n```\r\n\r\nDifferentiate both sides with respect to x using the chain rule and product rule:\r\n```\r\n(1/y) · dy/dx = d/dx[ln(x) · ln(ln x)]\r\n              = ln(ln x) · (1/x) + ln(x) · d/dx[ln(ln x)]\r\n```\r\n\r\nTo compute `d/dx[ln(ln x)]`, apply the chain rule with `v = ln x`:\r\n```\r\nd/dx[ln(ln x)] = d/dv[ln v] · dv/dx = (1/v) · (1/x) = 1/(x · ln x)\r\n```\r\n\r\nSubstituting back:\r\n```\r\n(1/y) · dy/dx = ln(ln x)/x + ln(x)/(x · ln x) = ln(ln x)/x + 1/x = [ln(ln x) + 1] / x\r\n```\r\n\r\nTherefore:\r\n```\r\ndy/dx = y · [ln(ln x) + 1] / x = (ln x)^(ln x) · [ln(ln x) + 1] / x\r\n```",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p40",
+    "chapter": 3,
+    "section": "3",
+    "title": "eᵠ vs. πe",
+    "setup": "Without numerical calculation, which is larger: `eᵠ` or `πe`?",
+    "solution": "Taking natural logs of both sides, the question reduces to: is `π·ln e = π` larger or smaller than `e·ln π`? Equivalently, is `π/ln π > e/ln e`? Equivalently, is `ln(e)/e > ln(π)/π`, i.e., does `f(x) = ln(x)/x` satisfy `f(e) > f(π)`?\r\n\r\nTaking the derivative:\r\n```\r\nf'(x) = [(1/x)·x - ln x] / x² = (1 - ln x) / x²\r\n```\r\n\r\n`f'(x) = 0` when `ln x = 1`, i.e., `x = e`. Since `f'(x) < 0` for `x > e` (because `ln x > 1`), `f(x)` is strictly decreasing for `x > e`.\r\n\r\nSince `π > e`, we have `f(π) < f(e)`:\r\n```\r\nln(π)/π < ln(e)/e = 1/e  →  e·ln(π) < π  →  ln(πe) < ln(eᵠ)  →  πe < eᵠ\r\n```\r\n\r\n**Therefore: `eᵠ > πe`.**\r\n\r\n**Alternative (Taylor's series):**\r\nSince `eˣ > 1 + x` for all `x > 0` (from the Taylor series), let `x = π/e - 1 > 0`:\r\n```\r\ne^(π/e - 1) > π/e  →  e^(π/e) > π  →  eᵠ > πe  ✓\r\n```",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p41",
+    "chapter": 3,
+    "section": "3",
+    "title": "Two limits",
+    "setup": "What is the limit of `eˣ/x²` as `x → ∞`, and what is the limit of `x²·ln x` as `x → 0⁺`?",
+    "solution": "**Limit 1:** `lim(x→∞) eˣ/x²`\r\n\r\nBoth `eˣ → ∞` and `x² → ∞`, so apply L'Hospital's rule:\r\n```\r\nlim eˣ/x² = lim eˣ/(2x)   [still ∞/∞, apply again]\r\n           = lim eˣ/2 = ∞\r\n```\r\n\r\n**Therefore: `lim(x→∞) eˣ/x² = ∞`.**\r\n\r\n**Limit 2:** `lim(x→0⁺) x²·ln x`\r\n\r\nThis is a `0 · (-∞)` form. Rewrite as `ln(x) / (1/x²)`, which is `(-∞)/∞`. Now apply L'Hospital's rule:\r\n```\r\nlim x²·ln x = lim ln(x)/(1/x²) = lim (1/x)/(-2/x³) = lim (-x²/2) = 0\r\n```\r\n\r\n**Therefore: `lim(x→0⁺) x²·ln x = 0`.**",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p42",
+    "chapter": 3,
+    "section": "3",
+    "title": "∫ ln(x) dx",
+    "setup": "",
+    "solution": "Apply integration by parts with `u = ln x` and `dv = dx`, so `du = (1/x)dx` and `v = x`:\r\n```\r\nd(uv) = v du + u dv = (x · 1/x)dx + ln x · dx = dx + ln x · dx\r\n```\r\n\r\nTherefore:\r\n```\r\n∫ ln x dx = x ln x - ∫ dx = x ln x - x + c\r\n```\r\n\r\n**Result: `∫ ln x dx = x ln x - x + c`**",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p43",
+    "chapter": 3,
+    "section": "3",
+    "title": "∫₀^(π/6) sec(x) dx",
+    "setup": "",
+    "solution": "We need `∫ sec x dx`. Start from trig derivatives. We only need to remember:\r\n```\r\nd/dx(sin x) = cos x    and    d/dx(cos x) = -sin x\r\n```\r\n\r\nAll others follow from the product or quotient rule:\r\n```\r\nd/dx(sec x) = d/dx(1/cos x) = sin x / cos²x = sec x · tan x\r\n\r\nd/dx(tan x) = d/dx(sin x / cos x) = (cos²x + sin²x)/cos²x = sec²x\r\n\r\nd/dx(sec x + tan x) = sec x · tan x + sec²x = sec x · (tan x + sec x)\r\n```\r\n\r\nSince `(sec x + tan x)` appears in the derivative of `(sec x + tan x)`, we have:\r\n```\r\nd/dx [ln|sec x + tan x|] = sec x · (sec x + tan x) / (sec x + tan x) = sec x\r\n```\r\n\r\nTherefore: `∫ sec x dx = ln|sec x + tan x| + c`\r\n\r\nFor the definite integral:\r\n```\r\n∫₀^(π/6) sec x dx = ln(sec(π/6) + tan(π/6)) - ln(sec(0) + tan(0))\r\n```\r\n\r\nComputing the trig values:\r\n```\r\nsec(π/6) = 1/cos(π/6) = 1/(√3/2) = 2/√3\r\ntan(π/6) = sin(π/6)/cos(π/6) = (1/2)/(√3/2) = 1/√3\r\n\r\nsec(π/6) + tan(π/6) = 2/√3 + 1/√3 = 3/√3 = √3\r\n\r\nsec(0) + tan(0) = 1 + 0 = 1\r\n```\r\n\r\n**Result:**\r\n```\r\n∫₀^(π/6) sec x dx = ln(√3) - ln(1) = ln(√3)\r\n```",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p44",
+    "chapter": 3,
+    "section": "3",
+    "title": "Volume of intersecting cylinders",
+    "setup": "Two cylinders each with radius 1 intersect at right angles and their centers also intersect. What is the volume of the intersection?",
+    "solution": "This is an application of integration for volume calculation. Orient the cylinders so their axes lie along the x-axis and y-axis respectively:\r\n```\r\nCylinder 1 (axis along x): y² + z² ≤ 1\r\nCylinder 2 (axis along y): x² + z² ≤ 1\r\n```\r\n\r\nThe general volume formula is `V = ∫ A(z) dz` where `A(z)` is the cross-sectional area cut by a horizontal plane at height `z`.\r\n\r\n**Finding A(z):** At height `z`, the cross-section must satisfy both constraints:\r\n- From cylinder 1: `|y| ≤ √(1 - z²)`\r\n- From cylinder 2: `|x| ≤ √(1 - z²)`\r\n\r\nThis is a **square** with side length `2√(1 - z²)`, so:\r\n```\r\nA(z) = (2√(1 - z²))² = 4(1 - z²)\r\n```\r\n\r\n**Computing the volume** (using symmetry about `z = 0`):\r\n```\r\nV = 2 × ∫₀¹ 4(1 - z²) dz = 8 × [z - z³/3]₀¹ = 8 × (1 - 1/3) = 8 × (2/3) = 16/3\r\n```\r\n\r\n**Result: `V = 16/3`**\r\n\r\n**Alternative approach (inscribed sphere):**\r\n\r\nA sphere of radius `r = 1` (same as the cylinders) fits inside both cylinders and is therefore inscribed in their intersection. Its volume is `V_sphere = (4/3)π`.\r\n\r\nAt every height `z`, the sphere's circular cross-section (area `π(1-z²)`) is inscribed in the intersection's square cross-section (area `4(1-z²)`). The ratio is constant:\r\n```\r\nA_circle / A_square = π(1-z²) / 4(1-z²) = π/4    for all z\r\n```\r\n\r\nSince this ratio is constant for every z-slice:\r\n```\r\nV_sphere / V_intersection = π/4  →  V_intersection = (4/π) × V_sphere = (4/π) × (4π/3) = 16/3  ✓\r\n```",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p45",
+    "chapter": 3,
+    "section": "3",
+    "title": "Snow plow problem",
+    "setup": "Snow began falling at a constant rate some time before noon. At noon, a snow plow began clearing a road, removing a constant volume of snow per unit time. At 1 pm it had moved 2 miles; at 2 pm, 3 miles. When did the snow begin to fall?",
+    "solution": "Let `t = 0` denote noon and let `T` be the number of hours before noon when snow began falling. Define:\r\n- `c₁` = volume of snow the plow removes per hour (constant)\r\n- `c₂` = rate of cross-sectional area increase per hour (constant snowfall rate)\r\n- `A(t) = c₂(t + T)` = cross-sectional area of snow at time `t` after noon\r\n\r\nThe plow's speed is inversely proportional to the snow depth it must clear:\r\n```\r\nv(t) = c₁ / A(t) = c₁ / [c₂(t + T)] = c / (t + T)    where c = c₁/c₂\r\n```\r\n\r\nDistance traveled from `t = 0` to `t = t₁`:\r\n```\r\n∫₀^(t₁) c/(t + T) dt = c · ln((t₁ + T)/T)\r\n```\r\n\r\nApplying the given conditions:\r\n```\r\nc · ln((1 + T)/T) = 2    ...(1)\r\nc · ln((2 + T)/T) = 3    ...(2)\r\n```\r\n\r\nDividing equation (2) by equation (1):\r\n```\r\nln((2 + T)/T) / ln((1 + T)/T) = 3/2\r\n```\r\n\r\nLet `k = e^(1/c)`. Then from equations (1) and (2):\r\n```\r\n(1 + T)/T = k²    →    1/T = k² - 1\r\n(2 + T)/T = k³    →    1/T = k³ - k²\r\n```\r\n\r\nSetting these equal:\r\n```\r\nk³ - k² = k² - 1  →  k³ - 2k² + 1 = 0  →  (k-1)(k² - k - 1) = 0\r\n```\r\n\r\nSince `k = e^(1/c) > 1` (strictly), we discard `k = 1`. The remaining factor gives:\r\n```\r\nk² - k - 1 = 0  →  k = (1 + √5)/2    (taking the positive root)\r\n```\r\n\r\nThis is the **golden ratio φ ≈ 1.618**. Since `T = 1/(k² - 1) = 1/k` (using `k² = k + 1`):\r\n```\r\nT = 1/k = 2/(1 + √5) = (√5 - 1)/2 ≈ 0.618 hours ≈ 37 minutes\r\n```\r\n\r\n**The snow began to fall approximately (√5−1)/2 hours ≈ 37 minutes before noon.**\r\n\r\n> This problem tests analytical skills, integration knowledge, and algebra. The key steps are: (1) correctly modeling the plow speed, (2) setting up the distance integrals, and (3) solving the resulting transcendental equation.",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p46",
+    "chapter": 3,
+    "section": "3",
+    "title": "E[X | X > 0] for a standard normal",
+    "setup": "If `X ~ N(0, 1)`, what is `E[X | X > 0]`?",
+    "solution": "The standard normal pdf is `f(x) = (1/√(2π)) e^(-x²/2)`. The conditional expectation is:\r\n```\r\nE[X | X > 0] = ∫₀^∞ x · f(x) dx  /  P(X > 0)\r\n```\r\n\r\n**Computing the numerator** using the substitution `u = -x²/2`, so `du = -x dx`:\r\n```\r\n∫₀^∞ x · (1/√(2π)) e^(-x²/2) dx = (1/√(2π)) ∫₀^∞ e^u (-du)  [limits: x=0→u=0, x=∞→u=-∞]\r\n                                  = (1/√(2π)) [-e^(-x²/2)]₀^∞\r\n                                  = (1/√(2π)) · (0 - (-1)) = 1/√(2π)\r\n```\r\n\r\n**Dividing by** `P(X > 0) = 1/2`:\r\n```\r\nE[X | X > 0] = (1/√(2π)) / (1/2) = 2/√(2π) = √(2/π) ≈ 0.7979\r\n```\r\n\r\n**Result: `E[X | X > 0] = √(2/π)`**",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p47",
+    "chapter": 3,
+    "section": "3",
+    "title": "x²/2) dx`",
+    "setup": "",
+    "solution": "Recall that the pdf of `N(0,1)` is `f(x) = (1/√(2π)) e^(-x²/2)`, and by definition `∫₋∞^∞ f(x)dx = 1`, so `∫₋∞^∞ e^(-x²/2)dx = √(2π)`. Here is the proof using polar integrals:\r\n\r\nLet `I = ∫₋∞^∞ e^(-x²/2) dx`. Then:\r\n```\r\nI² = (∫₋∞^∞ e^(-x²/2) dx)(∫₋∞^∞ e^(-y²/2) dy) = ∬_ℝ² e^(-(x²+y²)/2) dx dy\r\n```\r\n\r\nConvert to polar coordinates `(x² + y² = r², dx dy = r dr dθ)`:\r\n```\r\nI² = ∫₀^(2π) ∫₀^∞ e^(-r²/2) · r dr dθ = 2π · ∫₀^∞ r e^(-r²/2) dr\r\n```\r\n\r\nEvaluate using the substitution `u = -r²/2`, `du = -r dr`:\r\n```\r\n∫₀^∞ r e^(-r²/2) dr = [-e^(-r²/2)]₀^∞ = 0 - (-1) = 1\r\n```\r\n\r\nTherefore: `I² = 2π · 1 = 2π`, so **`I = ∫₋∞^∞ e^(-x²/2) dx = √(2π)`**.",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p48",
+    "chapter": 3,
+    "section": "3",
+    "title": "What is i^i?",
+    "setup": "",
+    "solution": "First, prove **Euler's formula** `e^(iθ) = cos θ + i sin θ` using Taylor series:\r\n```\r\ne^(iθ) = 1 + (iθ)/1! + (iθ)²/2! + (iθ)³/3! + (iθ)⁴/4! + (iθ)⁵/5! + ...\r\n        = 1 + iθ - θ²/2! - iθ³/3! + θ⁴/4! + iθ⁵/5! - ...\r\n\r\ncos θ = 1 - θ²/2! + θ⁴/4! - ...\r\nsin θ = θ - θ³/3! + θ⁵/5! - ...    →    i sin θ = iθ - iθ³/3! + iθ⁵/5! - ...\r\n```\r\n\r\nCombining the real and imaginary parts: **`e^(iθ) = cos θ + i sin θ`** ✓\r\n\r\n**Special values:**\r\n- `θ = π`: `e^(iπ) = cos π + i sin π = -1` → **Euler's identity: `e^(iπ) + 1 = 0`**\r\n- `θ = π/2`: `e^(iπ/2) = cos(π/2) + i sin(π/2) = i`\r\n\r\n**Computing i^i:**\r\n\r\nSince `e^(iπ/2) = i`, we have `ln i = iπ/2`. Therefore:\r\n```\r\ni^i = e^(i · ln i) = e^(i · iπ/2) = e^(i²π/2) = e^(-π/2) ≈ 0.2079\r\n```\r\n\r\n**Result: `i^i = e^(-π/2)`** — a real number.",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p49",
+    "chapter": 3,
+    "section": "3",
+    "title": "Bernoulli's Inequality",
+    "setup": "Prove that `(1 + x)ⁿ > 1 + nx` for all `x > -1` and all integers `n ≥ 2`.",
+    "solution": "Let `f(x) = (1 + x)ⁿ`. Note that `1 + nx` is the first two terms of the Taylor series of `f(x)` around `x₀ = 0`.\r\n\r\nApplying the Taylor series with `x₀ = 0`:\r\n```\r\nf(x) = f(0) + f'(0)·x + f''(x̄)/2! · x²\r\n     = 1 + nx + [n(n-1)(1+x̄)^(n-2)] / 2 · x²    for some x̄ between 0 and x\r\n```\r\n\r\nSince `n ≥ 2`, `x > -1`, and `x² > 0`:\r\n- `n ≥ 2 > 0` ✓\r\n- `(n-1) ≥ 1 > 0` ✓\r\n- `(1 + x̄)^(n-2) > 0` (since `x̄ > -1`) ✓\r\n\r\nTherefore the remainder term is positive, and `f(x) = (1+x)ⁿ > 1 + nx`. ✓",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p50",
+    "chapter": 3,
+    "section": "3",
+    "title": "Approximate √37 to three digits",
+    "setup": "",
+    "solution": "Let `f(x) = x² - 37`. We want to solve `f(x) = 0`. A natural initial guess is `x₀ = 6` (since `6² = 36 ≈ 37`).\r\n\r\nApplying one Newton iteration:\r\n```\r\nx₁ = x₀ - f(x₀)/f'(x₀) = 6 - (36 - 37)/(2 × 6) = 6 - (-1/12) = 6 + 1/12 ≈ 6.083\r\n```\r\n\r\nVerify: `6.083² ≈ 37.003` ✓\r\n\r\n**Alternative (Taylor approximation):** Let `g(x) = √x`, `g'(x) = 1/(2√x)`:\r\n```\r\n√37 ≈ g(36) + g'(36) · (37 - 36) = 6 + (1/12) · 1 = 6.083  ✓\r\n```\r\n\r\n**Alternative (Algebra):** Let `x = 6 + y` where `y` is small. Then:\r\n```\r\n(6 + y)² = 37  →  12y + y² = 1  →  y ≈ 1/12 = 0.083    (ignoring the y² term)\r\n```\r\n\r\n**Result: √37 ≈ 6.083**",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p51",
+    "chapter": 3,
+    "section": "3",
+    "title": "finding algorithms",
+    "setup": "Describe some root-finding algorithms for `f(x) = 0` (differentiable `f(x)`).",
+    "solution": "Besides Newton's method, two important alternatives are the bisection method and the secant method.\r\n\r\n**Bisection method:**\r\n\r\nStart with two values `a₀` and `b₀` such that `f(a₀) < 0` and `f(b₀) > 0` (a sign change bracket). At each step, evaluate the midpoint:\r\n- If `f((aₙ + bₙ)/2) < 0`: set `aₙ₊₁ = (aₙ + bₙ)/2`, `bₙ₊₁ = bₙ`\r\n- If `f((aₙ + bₙ)/2) > 0`: set `aₙ₊₁ = aₙ`, `bₙ₊₁ = (aₙ + bₙ)/2`\r\n- If `|f((aₙ + bₙ)/2)|` is within tolerance: stop, `x* ≈ (aₙ + bₙ)/2`\r\n\r\nThe bisection method has **linear convergence**: `|x_{n+1} - x*| / |xₙ - x*| < δ < 1`. It is slower than Newton's method, but **convergence is guaranteed** once a valid bracket `(a₀, b₀)` is found.\r\n\r\n**Secant method:**\r\n\r\nStart with two initial values `x₀`, `x₁` and apply:\r\n```\r\nx_{n+1} = xₙ - f(xₙ) · (xₙ - x_{n-1}) / (f(xₙ) - f(x_{n-1}))\r\n```\r\n\r\nThis replaces the exact derivative `f'(xₙ)` in Newton's method with a finite-difference approximation. The secant method does not require computing derivatives, making it valuable when `f'(x)` is hard to compute.\r\n\r\n**Convergence rate: `(1 + √5)/2 ≈ 1.618`** (superlinear — faster than bisection, slower than Newton). Like Newton's method, convergence is not guaranteed for poor initial values.\r\n\r\n| Method | Convergence Rate | Needs Derivative? | Guaranteed? |\r\n|",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p52",
+    "chapter": 3,
+    "section": "3",
+    "title": "Distance from origin to a plane",
+    "setup": "What is the distance from the origin to the plane `2x + 3y + 4z = 12`?",
+    "solution": "Minimizing distance `D` is equivalent to minimizing `D² = f(x, y, z) = x² + y² + z²` subject to `g(x, y, z) = 2x + 3y + 4z - 12 = 0`.\r\n\r\nApplying Lagrange conditions `∇f + λ∇g = 0`:\r\n```\r\n2x + 2λ = 0  →  x = -λ\r\n2y + 3λ = 0  →  y = -3λ/2\r\n2z + 4λ = 0  →  z = -2λ\r\n```\r\n\r\nSubstituting into the constraint `2x + 3y + 4z = 12`:\r\n```\r\n2(-λ) + 3(-3λ/2) + 4(-2λ) = 12\r\n-2λ - 9λ/2 - 8λ = 12\r\nλ(-4/2 - 9/2 - 16/2) = 12\r\nλ(-29/2) = 12    →    λ = -24/29\r\n```\r\n\r\nOptimal point:\r\n```\r\nx = 24/29,    y = 36/29,    z = 48/29\r\n```\r\n\r\nDistance:\r\n```\r\nD = √(x² + y² + z²) = √((24² + 36² + 48²)/29²) = √(4176/841) = √(144/29) = 12/√29\r\n```\r\n\r\n**Result: `D = 12/√29`**\r\n\r\n**General formula:** For a plane `ax + by + cz = d`, the distance from the origin is:\r\n```\r\nD = |d| / √(a² + b² + c²)\r\n```\r\n\r\nApplying: `D = 12/√(4 + 9 + 16) = 12/√29` ✓",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p53",
+    "chapter": 3,
+    "section": "3",
+    "title": "Separable ODE with initial condition",
+    "setup": "Solve `y' + 6xy = 0`, `y(0) = 1`.",
+    "solution": "Separate variables with `g(x) = -6x` and `h(y) = y`:\r\n```\r\ndy/y = -6x dx\r\n∫ dy/y = ∫ -6x dx    →    ln y = -3x² + c    →    y = Ae^(-3x²)\r\n```\r\n\r\nApplying `y(0) = 1`: `A = 1`.\r\n\r\n**Result: `y = e^(-3x²)`**",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p54",
+    "chapter": 3,
+    "section": "3",
+    "title": "Change of variable",
+    "setup": "Solve `y' = (x - y)/(x + y)`.\r\n\r\n> **Hint:** Introduce the substitution `z = x + y`.",
+    "solution": "The equation is not separable in its original form. Let `z = x + y`, so `y = z - x` and `y' = z' - 1`. Substituting:\r\n```\r\nz' - 1 = (x - (z - x)) / z = (2x - z) / z\r\nz' = 1 + (2x - z)/z = (z + 2x - z)/z = 2x/z\r\n```\r\n\r\nNow it is separable: `z dz = 2x dx`\r\n```\r\n∫ z dz = ∫ 2x dx    →    z²/2 = x² + c₁    →    z² = 2x² + C\r\n```\r\n\r\nSubstituting back `z = x + y`:\r\n```\r\n(x + y)² = 2x² + C    →    x² + 2xy + y² = 2x² + C\r\n```\r\n\r\n**Result: `y² + 2xy - x² = C`**\r\n\r\nVerification: Differentiating `y² + 2xy - x² = C` implicitly:\r\n```\r\n2y·y' + 2y + 2x·y' - 2x = 0  →  y'(y + x) = x - y  →  y' = (x - y)/(x + y)  ✓\r\n```",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p55",
+    "chapter": 3,
+    "section": "3",
+    "title": "order linear ODE",
+    "setup": "Solve `y' + y/x = 1/x²`, `y(1) = 1`, where `x > 0`.",
+    "solution": "Here `P(x) = 1/x` and `Q(x) = 1/x²`.\r\n\r\nIntegrating factor: `I(x) = e^(∫ 1/x dx) = e^(ln x) = x`\r\n\r\nRewrite as `(xy)' = x · (1/x²) = 1/x`. Integrate both sides:\r\n```\r\nxy = ∫ (1/x) dx = ln x + c    →    y = (ln x + c)/x\r\n```\r\n\r\nApplying `y(1) = 1`: `c/1 = 1` → `c = 1`.\r\n\r\n**Result: `y = (ln x + 1)/x`**",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p56",
+    "chapter": 3,
+    "section": "3",
+    "title": "Complex roots ODE",
+    "setup": "What is the solution of `y'' + y' + y = 0`?",
+    "solution": "Here `a = b = c = 1`. The characteristic equation is `r² + r + 1 = 0`.\r\n\r\nDiscriminant: `b² - 4ac = 1 - 4 = -3 < 0` → complex roots.\r\n```\r\nr = (-1 ± √(-3)) / 2 = -1/2 ± (√3/2)i\r\n```\r\n\r\nSo `α = -1/2` and `β = √3/2`. The general solution is:\r\n```\r\ny = e^(-x/2) [c₁cos(√3x/2) + c₂sin(√3x/2)]\r\n```",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p57",
+    "chapter": 3,
+    "section": "3",
+    "title": "Two nonhomogeneous ODEs",
+    "setup": "Find the solutions of `y'' + y' + y = 1` and `y'' + y' + y = x`.",
+    "solution": "From the previous problem, both ODEs share the same homogeneous solution (since `a = b = c = 1`, `b² - 4ac = -3 < 0`):\r\n```\r\nyₕ(x) = e^(-x/2)[c₁cos(√3x/2) + c₂sin(√3x/2)]\r\n```\r\n\r\n**For `y'' + y' + y = 1`:**\r\n\r\nTry `yₚ = 1` (constant particular solution):\r\n```\r\nyₚ'' + yₚ' + yₚ = 0 + 0 + 1 = 1  ✓\r\n```\r\n\r\n**General solution: `y = e^(-x/2)[c₁cos(√3x/2) + c₂sin(√3x/2)] + 1`**\r\n\r\n**For `y'' + y' + y = x`:**\r\n\r\nTry `yₚ = mx + n` (linear particular solution):\r\n```\r\nyₚ'' + yₚ' + yₚ = 0 + m + (mx + n) = mx + (m + n) = x\r\n```\r\n\r\nMatching coefficients: `m = 1` and `m + n = 0` → `n = -1`. So `yₚ = x - 1`.\r\n\r\nVerify: `0 + 1 + (x - 1) = x` ✓\r\n\r\n**General solution: `y = e^(-x/2)[c₁cos(√3x/2) + c₂sin(√3x/2)] + (x - 1)`**",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p58",
+    "chapter": 3,
+    "section": "3",
+    "title": "Maximum and minimum correlation (vector approach)",
+    "setup": "There are 3 random variables `x`, `y`, `z`. The correlation between `x` and `y` is 0.8, and between `x` and `z` is 0.8. What are the maximum and minimum correlations between `y` and `z`?",
+    "solution": "Treat `x`, `y`, `z` as unit vectors. Let `θ` be the angle between `x` and `y`, so `cos θ = ρ_xy = 0.8`. The angle between `x` and `z` is also `θ`.\r\n\r\n- **Maximum `ρ_yz`:** When `y` and `z` point in the same direction, the angle between them is 0, so `ρ_yz = 1`.\r\n\r\n- **Minimum `ρ_yz`:** This occurs when `y` and `z` are on opposite sides of `x`, making the angle between them equal to `2θ`:\r\n\r\n```\r\ncos(2θ) = 2cos²θ - 1 = 2(0.8)² - 1 = 2(0.64) - 1 = 0.28\r\n```\r\n\r\n**Verification via dot product:** In 2D, `y = (0.8, 0.6)` and `z = (0.8, -0.6)` (symmetric about `x = (1, 0)`, both with `cos θ = 0.8`):\r\n```\r\ny · z = (0.8)(0.8) + (0.6)(-0.6) = 0.64 - 0.36 = 0.28  ✓\r\n```\r\n\r\n**Result: Maximum correlation = 1, Minimum correlation = 0.28.**",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p59",
+    "chapter": 3,
+    "section": "3",
+    "title": "Linear least squares regression",
+    "setup": "If your programming language has no built-in least squares function, how would you design an algorithm?",
+    "solution": "A linear regression with `n` observations and `p` regressors (including intercept):\r\n```\r\nyᵢ = β₀xᵢ₀ + β₁xᵢ₁ + ... + β_{p-1}xᵢ,p-1 + εᵢ    (where xᵢ₀ = 1 ∀i)\r\n```\r\n\r\nIn matrix form: `Y = Xβ + ε`, where `Y` and `ε` are `n×1` column vectors, `X` is `n×p`.\r\n\r\nThe goal is to minimize the sum of squared residuals:\r\n```\r\nmin f(β) = min ||ε||² = min (Y - Xβ)ᵀ(Y - Xβ)\r\n```\r\n\r\nTaking the derivative with respect to `β` and setting to zero:\r\n```\r\nf'(β) = -2Xᵀ(Y - Xβ) = 0    →    (XᵀX)β = XᵀY\r\n```\r\n\r\nThis is the **normal equation**. Let `A = XᵀX` (a `p×p` symmetric matrix) and `b = XᵀY`. The problem reduces to solving `Aβ = b`, which can be solved using QR decomposition, or directly via:\r\n```\r\nβ = (XᵀX)⁻¹XᵀY\r\n```\r\n\r\n> **Note:** Direct matrix inversion introduces large numerical error when `X` is nearly singular or badly scaled. QR decomposition is numerically preferred.\r\n\r\n**Assumptions behind OLS:**\r\n1. Linearity: `Y = Xβ + ε`\r\n2. Zero mean errors: `E[εᵢ] = 0` for all `i`\r\n3. Homoskedasticity and no autocorrelation: `Var(εᵢ) = σ²` (constant), `E[εᵢεⱼ] = 0` for `i ≠ j`\r\n4. No perfect multicollinearity: `ρ(xᵢ, xⱼ) ≠ ±1` for `i ≠ j`\r\n5. Exogeneity: `ε` and `xᵢ` are independent\r\n\r\nWhen these assumptions hold, OLS is the **Best Linear Unbiased Estimator (BLUE)**. Violations require remedies from econometrics.",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p60",
+    "chapter": 3,
+    "section": "3",
+    "title": "Eigenvalues and eigenvectors of a 2×2 matrix",
+    "setup": "For `A = [[2, 1], [1, 2]]`, find the eigenvalues and eigenvectors.",
+    "solution": "**Approach A — Direct definition:**\r\n\r\nLet `Ax = λx` with eigenvector `x = [x₁, x₂]ᵀ`:\r\n```\r\n2x₁ + x₂ = λx₁    ...(eq 1)\r\nx₁ + 2x₂ = λx₂    ...(eq 2)\r\n```\r\n\r\nAdding equations: `3(x₁ + x₂) = λ(x₁ + x₂)`. So either `λ = 3` (when `x₁ = x₂`) or `x₁ + x₂ = 0` (when `x₁ = -x₂`, giving `λ = 1` from equation 1).\r\n\r\n| Eigenvalue | Eigenvector condition | Normalized eigenvector |\r\n|",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p61",
+    "chapter": 3,
+    "section": "3",
+    "title": "Correlation bounds (PSD approach)",
+    "setup": "With `ρ_xy = ρ_xz = 0.8`, what are the maximum and minimum values of `ρ_yz`?",
+    "solution": "The correlation matrix for `(x, y, z)` is:\r\n```\r\nP = | 1    0.8   0.8 |\r\n    | 0.8  1     p   |\r\n    | 0.8  p     1   |\r\n```\r\n\r\nFor `P` to be valid (PSD), we need `det(P) ≥ 0`. Expanding by cofactor along the first row:\r\n```\r\ndet(P) = 1·det([[1, p], [p, 1]]) - 0.8·det([[0.8, p], [0.8, 1]]) + 0.8·det([[0.8, 1], [0.8, p]])\r\n       = (1 - p²) - 0.8(0.8 - 0.8p) + 0.8(0.8p - 0.8)\r\n       = (1 - p²) - 0.64 + 0.64p + 0.64p - 0.64\r\n       = -p² + 1.28p - 0.28\r\n```\r\n\r\nSetting `det(P) ≥ 0`:\r\n```\r\n-p² + 1.28p - 0.28 ≥ 0\r\np² - 1.28p + 0.28 ≤ 0\r\n(p - 1)(p - 0.28) ≤ 0\r\n0.28 ≤ p ≤ 1\r\n```\r\n\r\n**Result: Maximum `ρ_yz = 1`, Minimum `ρ_yz = 0.28`**\r\n\r\n> Both methods (vector geometry and PSD condition) give the same answer. The vector method uses `cos(2θ) = 2cos²θ - 1 = 2(0.64) - 1 = 0.28` and is more intuitive; the PSD method is more algebraic.",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "uid": "ch03-p62",
+    "chapter": 3,
+    "section": "3",
+    "title": "Generating correlated normal random variables",
+    "setup": "How do you generate two `N(0,1)` random variables with correlation `ρ`, given a standard normal random number generator?",
+    "solution": "Let `z₁`, `z₂` be independent `N(0,1)` random variables. Generate:\r\n```\r\nx₁ = z₁\r\nx₂ = ρz₁ + √(1 - ρ²) z₂\r\n```\r\n\r\n**Verification:**\r\n```\r\nVar(x₁) = Var(z₁) = 1  ✓\r\nVar(x₂) = ρ²·Var(z₁) + (1 - ρ²)·Var(z₂) = ρ² + (1 - ρ²) = 1  ✓\r\nCov(x₁, x₂) = Cov(z₁, ρz₁ + √(1-ρ²)z₂) = ρ·Var(z₁) + 0 = ρ  ✓\r\n```\r\n\r\nThis is a basic application of Cholesky decomposition. The Cholesky factor of the 2×2 correlation matrix `[[1, ρ], [ρ, 1]]` is `R = [[1, 0], [ρ, √(1-ρ²)]]`, and `x = Rᵀz` produces the correlated pair.",
+    "tags": [
+      "quant",
+      "chapter-3"
+    ],
+    "difficulty": "medium"
+  }
+]
